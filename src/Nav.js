@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './nav.scss';
 import ProductsMegemanu from './ProductsMegemanu';
-
+import logoImage from './images/apple.png'; 
 const Nav = () => {
     return (
         <nav className="nav">
-            <Link to="/" className="logo">Title</Link>
+            <Link to="/" className="logo">
+                <img src={logoImage} alt="Logo" /> Title
+            </Link>
             <ul className="nav-links">
                 <li>
                     <Link to="#">Products</Link>
