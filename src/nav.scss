@@ -2,21 +2,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1f2e52; // Dark blue color
+    background-color: #1f2e52; 
     padding: 1rem;
     color: #fff;
 
     .logo {
+        display: flex;
+        align-items: center;
         font-size: 1.5rem;
         font-weight: bold;
         color: #fff;
         text-decoration: none;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+        img {
+            margin-right: 0.5rem; 
+            width: 24px; 
+            height: 24px; 
+        }
     }
 
     .nav-links {
         list-style: none;
         display: flex;
         gap: 2rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
 
         li {
             position: relative;
@@ -25,6 +37,12 @@
                 color: #fff;
                 text-decoration: none;
                 font-size: 1rem;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                transition: color 0.3s;
+            }
+
+            a:hover {
+                color: #ddd;
             }
 
             &:hover .nav-megemanu {
@@ -36,24 +54,37 @@
     .auth-buttons {
         display: flex;
         gap: 1rem;
+        margin-left: auto; 
 
         .login-btn,
         .signup-btn {
-            padding: 0.5rem 1rem;
+            padding: 0.3rem 1rem; 
             border: none;
-            border-radius: 5px;
+            border-radius: 20px; 
             cursor: pointer;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .login-btn {
             background-color: transparent;
             color: #fff;
             border: 1px solid #fff;
+
+            &:hover {
+                background-color: #fff;
+                color: #1f2e52;
+            }
         }
 
         .signup-btn {
-            background-color: #4285f4; // Blue color
+            background-color: #4285f4; 
             color: #fff;
+
+            &:hover {
+                background-color: #357ae8;
+            }
         }
     }
 }
@@ -84,11 +115,13 @@
         h4 {
             margin: 0;
             font-size: 1rem;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
         p {
             margin: 0;
             font-size: 0.875rem;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
     }
 }
