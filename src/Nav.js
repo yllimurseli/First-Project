@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './nav.scss';
-import { NavData } from './components/NavData';
 import ProductsMegemanu from './ProductsMegemanu';
 
 const Nav = () => {
@@ -15,7 +14,7 @@ const Nav = () => {
                 </li>
                 <li><Link to="#">Blog</Link></li>
                 <li><Link to="#">About Us</Link></li>
-                <li><Link to="/support">Support</Link></li> {/* This can be a placeholder or direct to an external URL */}
+                <li><Link to="/support">Support</Link></li>
             </ul>
             <div className="auth-buttons">
                 <button className="login-btn">Log In</button>
