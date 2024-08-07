@@ -7,7 +7,7 @@ body {
 }
 
 .nav {
-    background-color: #1a3b5d; // Update this color if needed
+    background-color: #1a3b5d; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ body {
 }
 
 .nav-links a:hover {
-    background: #2a4b6d; // Update this color if needed
+    background: #2a4b6d; 
     border-radius: 5px;
 }
 
@@ -65,12 +65,12 @@ body {
 }
 
 .signup-btn {
-    background-color: #4b8fe2; // Update this color if needed
+    background-color: #4b8fe2; 
     color: #fff;
 }
 
 .login-btn:hover, .signup-btn:hover {
-    background-color: #3672ba; // Update this color if needed
+    background-color: #3672ba; 
 }
 
 .nav-megemanu {
@@ -81,11 +81,11 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     padding: 20px;
     border-radius: 5px;
-    display: none; /* Hide by default */
+    display: none;
 }
 
 .nav-links li:hover .nav-megemanu {
-    display: block; /* Show on hover */
+    display: block; 
 }
 
 .nav-megemanu a {
