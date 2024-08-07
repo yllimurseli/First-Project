@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.nav {
+    background-color: #1a3b5d; // Update this color if needed
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #2a4b6d; // Update this color if needed
+    border-radius: 5px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .signup-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.signup-btn {
+    background-color: #4b8fe2; // Update this color if needed
+    color: #fff;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background-color: #3672ba; // Update this color if needed
+}
+
+.nav-megemanu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 5px;
+    display: none; /* Hide by default */
+}
+
+.nav-links li:hover .nav-megemanu {
+    display: block; /* Show on hover */
+}
+
+.nav-megemanu a {
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-megemanu a:hover {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a3b5d;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #1a3b5d;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}

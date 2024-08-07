@@ -1,0 +1,94 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2e52; // Dark blue color
+    padding: 1rem;
+    color: #fff;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+
+        li {
+            position: relative;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+
+            &:hover .nav-megemanu {
+                display: block;
+            }
+        }
+    }
+
+    .auth-buttons {
+        display: flex;
+        gap: 1rem;
+
+        .login-btn,
+        .signup-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        .signup-btn {
+            background-color: #4285f4; // Blue color
+            color: #fff;
+        }
+    }
+}
+
+.nav-megemanu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    top: 2rem;
+    left: 0;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .nav-megemanu-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        .nav-megemanu-icon {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.875rem;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid red;
+  }
+  
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .description {
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .state {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .state h1.green {
+    color: green;
+  }
+  
+  .popup {
+    text-align: center;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+  }
+  
